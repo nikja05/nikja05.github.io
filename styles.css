@@ -1,12 +1,9 @@
 :root {
     --navbar: #510dd8;
-    --text1: #0f0f0f;
+    --text1: #000;
     --text2: white;
     --background: #ffffff;
     --primary: #155831;
-    --secondary1: #d7e4dc;
-    --secondary2: #a6ccb6;
-    --secondary3: #26532B;
     --accent: #03256C;
 }
 
@@ -22,6 +19,9 @@ html {
 
 body {
     font-family: "Coming Soon", monospace;
+    background-color: var(--background);
+    /*if problem with color, this might be it*/
+    color: var(--text1);
 }
 
 .navbar {
@@ -32,7 +32,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--primary);
+    background-color: var(--navbar);
     box-shadow: rgba(0,0,0,0.6) 0px 3px 10px;
 } 
 
@@ -84,12 +84,11 @@ a {
 .welcome-section {
     height: 100vh;
     width: 100%;
-    background-color: var(--secondary1);
+    /*background-color: var(--background);*/
     text-align: center;
 }
 
 .header {
-    color: var(--text1);
     font-size: 4rem;
 }
 
@@ -99,7 +98,6 @@ a {
 }
 
 .welcome-section > p {
-    color: var(--text1);
     position: relative;
     margin: auto;
     text-align: center;
@@ -110,10 +108,7 @@ a {
 .projects-section {
     width: 100%;
     padding: 10rem 2rem;
-    background: linear-gradient(
-        20deg, 
-        var(--secondary2) 0%, 
-        var(--secondary1) 100%);
+    /*background: var(--background);*/
     text-align: center;
 }
 
@@ -129,7 +124,7 @@ a {
 }
 
 .project-tile {
-    background-color: var(--accent);
+    background-color: var(--primary);
     border-radius: 2px;
     transition: box-shadow 0.1s ease-in-out 0ms;
 }
@@ -137,7 +132,7 @@ a {
 .project-tile:hover {
     box-shadow: black 1px 1px 10px;
     color: var(--text1);
-    background-color: var(--primary);
+    background-color: var(--accent);
 }
 
 .project-img {
@@ -153,7 +148,6 @@ a {
 }
 
 .contact-section {
-    background: var(--secondary2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,7 +174,6 @@ a {
 
 .contact-button {
     font-size: 2.5rem;
-    color: var(--text);
     font-weight: bold;
     transition: text-shadow, transform 0.2s ease-in-out 0ms;
 }
@@ -195,7 +188,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background-color: var(--primary);
+    background-color: var(--navbar);
     font-size: 2rem;
     color: var(--text2);
 }
