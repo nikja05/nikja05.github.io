@@ -1,10 +1,11 @@
 :root {
-    --navbar: #510dd8;
-    --text1: #000;
+    --navbar: #689e64;
+    --text1: #070b07;
     --text2: white;
-    --background: #ffffff;
-    --primary: #155831;
-    --accent: #03256C;
+    --background: #f3f8f3;
+    --primary: #689e64;
+    --secondary: #a2c3c5;
+    --accent: #84a2b2;
 }
 
 *, ::before, ::after {
