@@ -197,10 +197,18 @@ footer {
 }
 
 @media (max-width: 600px) {
+    
+    .welcome-section {
+        padding: 0 15px 0 15px;
+    }
+    
+    .nav-logo {
+        padding-left: 0px;
+        margin: auto;
+    }
+    
     .nav-list {
-        padding: 0 0.5vw 0 0.5vw;
-        align-items: center;
-        font-size: 1.5vw;
+        display: none;
     }
     
     footer {
