@@ -50,7 +50,7 @@ body {
     font-size: 2.5em;
     font-weight: bold;
     color: var(--text2);
-    transition: text-shadow ease-in-out 0.5s 0ms;
+    transition: text-shadow ease-in-out 0.2s 0ms;
 }
 
 .nav-logo > p:hover {
@@ -70,7 +70,7 @@ a {
     color: var(--text2);
 }
 
-.nav-list > li:hover {
+.nav-list > a:hover {
     text-shadow: #fc0 1px 0 10px;
 }
 
@@ -197,8 +197,15 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .nav-list a {
-        font-size: 4vw;
-        padding: 3vw;
+    .nav-list {
+        padding: 0 0.5vw 0 0.5vw;
+        align-items: center;
+        font-size: 1.5vw;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
     }
 }
