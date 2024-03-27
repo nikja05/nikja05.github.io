@@ -1,2 +1,4 @@
 # nikja05.github.io
-Current and updatet version of the portfolio page.
+Current version of the [portfolio page](https://nikja05.github.io).
+
+Last updated: 30 Jan 2024
