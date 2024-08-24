@@ -1,5 +1,4 @@
 :root {
-    --navbar: #510dd8;
     --text1: #0f0f0f;
     --text2: white;
     --background: #ffffff;
@@ -135,6 +134,16 @@ a {
     margin: 0;
     padding: 1rem 0;
     font-size: 2.5rem;
+}
+
+.project-tile-showcase {
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: box-shadow 0.1s ease-in-out 0ms;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    height: 30%;
 }
 
 .project-tile:hover {
