@@ -1,5 +1,4 @@
 :root {
-    --navbar: #510dd8;
     --text1: #0f0f0f;
     --text2: white;
     --background: #ffffff;
@@ -81,16 +80,40 @@ a {
     padding: 15px;
 }
 
+.header {
+    color: var(--text1);
+    font-size: 4rem;
+}
+
+.text-header {
+    padding: 4rem 0 2rem 0;
+}
+
+.text-section {
+    margin-top: 90px;
+    width: 100%;
+    background-color: var(--secondary1);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.text-section > p {
+    color: var(--text1);
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.article-img {
+    
+}
+
 .welcome-section {
     height: 100vh;
     width: 100%;
     background-color: var(--secondary1);
     text-align: center;
-}
-
-.header {
-    color: var(--text1);
-    font-size: 4rem;
 }
 
 .welcome-header {
@@ -135,6 +158,16 @@ a {
     margin: 0;
     padding: 1rem 0;
     font-size: 2.5rem;
+}
+
+.project-tile-showcase {
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: box-shadow 0.1s ease-in-out 0ms;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    height: 30%;
 }
 
 .project-tile:hover {
