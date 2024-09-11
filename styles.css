@@ -21,6 +21,7 @@ html {
 
 body {
     font-family: "Coming Soon", monospace;
+    background-color: var(--secondary1)
 }
 
 .navbar {
@@ -32,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--primary);
-    box-shadow: rgba(0,0,0,0.6) 0px 3px 10px;
+    box-shadow: rgba(0,0,0,0.6) 0 3px 10px;
 } 
 
 .nav-logo {
@@ -85,28 +86,29 @@ a {
     font-size: 4rem;
 }
 
+.text-section {
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-bottom: 4rem;
+    text-align: justify;
+}
+
 .text-header {
     padding: 4rem 0 2rem 0;
 }
 
-.text-section {
-    margin-top: 90px;
-    width: 100%;
-    background-color: var(--secondary1);
-    text-align: center;
-    padding-bottom: 4rem;
-}
-
 .text-section > p {
+    margin-bottom: 1rem;
+    margin-top: 0;
     color: var(--text1);
-    width: 60%;
-    margin: auto;
-    text-align: justify;
     font-size: 2rem;
 }
 
 .article-img {
-    
+    width: 70%;
+    height: auto;
 }
 
 .welcome-section {
@@ -216,11 +218,11 @@ a {
 
 .contact-button:hover {
     transform: scale(1.2);
-    text-shadow: #fc0 0px 5px 10px;
+    text-shadow: #fc0 0 5px 10px;
 }
 
 footer {
-    box-shadow: rgba(0,0,0,0.6) 0px -3px 10px;
+    box-shadow: rgba(0,0,0,0.6) 0 -3px 10px;
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
@@ -231,17 +233,49 @@ footer {
 
 @media (max-width: 600px) {
     
-    .welcome-section {
-        padding: 0 15px 0 15px;
+    .navbar {
+        position: relative;
     }
     
     .nav-logo {
-        padding-left: 0px;
+        padding-left: 0;
         margin: auto;
     }
     
+    .nav-logo > p {
+        font-size: 1.5em;
+    }
+    
     .nav-list {
-        display: none;
+        margin: 5px;
+        padding-right: 1em;
+    }
+    
+    .nav-list a {
+        font-size: 2em;
+    }
+    
+    .text-header {
+        font-size: 3rem;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .text-section {
+        margin-top: 2rem;
+        width: 80%;
+    }
+    
+    .text-section > p {
+        font-size: 1.5rem;
+    }
+    
+    .article-img {
+        width: 100%;
+    }
+    
+    .welcome-section {
+        padding: 0 15px 0 15px;
     }
     
     footer {
