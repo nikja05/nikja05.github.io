@@ -21,7 +21,9 @@ html {
 
 body {
     font-family: "Coming Soon", monospace;
-    background-color: var(--secondary1)
+    background-color: var(--secondary1);
+    min-height: 100%;
+    height: auto;
 }
 
 .navbar {
@@ -87,7 +89,7 @@ a {
 }
 
 .text-section {
-    margin-top: 8rem;
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -96,7 +98,7 @@ a {
 }
 
 .text-header {
-    padding: 4rem 0 2rem 0;
+    padding: 2rem 0;
 }
 
 .text-section > p {
@@ -106,7 +108,15 @@ a {
     font-size: 2rem;
 }
 
+aside {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: right;
+}
+
 .article-img {
+    display: block;
+    margin: 0 auto;
     width: 70%;
     height: auto;
 }
