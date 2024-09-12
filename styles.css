@@ -42,7 +42,7 @@ body {
     display: flex;
     justify-content: flex-start;
     padding-left: 5vw;
-    margin: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .nav-logo > p {
@@ -89,7 +89,7 @@ a {
 }
 
 .text-section {
-    margin-top: 10rem;
+    margin-top: 11rem;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -122,8 +122,9 @@ aside {
 }
 
 .welcome-section {
+    margin: 0 auto;
     height: 100vh;
-    width: 100%;
+    width: 90%;
     background-color: var(--secondary1);
     text-align: center;
 }
@@ -158,9 +159,19 @@ aside {
 
 .project-grid {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    width: 100%;
+    width: 90%;
     grid-gap: 10px;
+}
+
+.blog-grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 90%;
+    grid-gap: 10px;
+    max-height: 50vh;
 }
 
 .project-tile {
@@ -189,7 +200,7 @@ aside {
 
 .project-img {
     object-fit: cover;
-    height: calc(100% - 6rem);
+    height: calc(100% - 5rem);
     width: 100%;
 }
 
@@ -286,6 +297,18 @@ footer {
     
     .welcome-section {
         padding: 0 15px 0 15px;
+    }
+    
+    .welcome-header {
+        top: 30%;
+    }
+    
+    .welcome-section > p {
+        top: 30%;
+    }
+    
+    .project-tile-showcase {
+        height: 90%;
     }
     
     footer {
