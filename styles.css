@@ -40,7 +40,7 @@ body {
 
 .nav-logo {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     padding-left: 5vw;
     margin: 10px 0 10px 0;
 }
@@ -89,10 +89,10 @@ a {
 }
 
 .text-section {
-    margin-top: 11rem;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    padding-top: 12rem;
     padding-bottom: 4rem;
     text-align: justify;
 }
@@ -119,6 +119,7 @@ aside {
     margin: 0 auto;
     width: 70%;
     height: auto;
+    padding: 1.2rem 0;
 }
 
 .welcome-section {
@@ -285,6 +286,7 @@ footer {
     .text-section {
         margin-top: 2rem;
         width: 80%;
+        padding-top: 0;
     }
     
     .text-section > p {
