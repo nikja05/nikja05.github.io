@@ -29,7 +29,6 @@ body {
 .navbar {
     z-index: 6;
     display: flex;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,8 +38,8 @@ body {
 } 
 
 .nav-logo {
-    display: flex;
-    justify-content: left;
+    position: relative;
+    left: 10%;
     padding-left: 5vw;
     margin: 10px 0 10px 0;
 }
@@ -61,8 +60,8 @@ body {
 
 .nav-list {
     margin: 10px;
-    display: flex;
-    justify-content: space-evenly;
+    position: fixed;
+    right: 10%;
     list-style: none;
     padding-right: 5vw;
 }
@@ -259,22 +258,18 @@ footer {
         position: relative;
     }
     
-    .nav-logo {
-        padding-left: 0;
-        margin: auto;
-    }
-    
     .nav-logo > p {
-        font-size: 1.5em;
+        font-size: 1.8rem;
     }
     
     .nav-list {
-        margin: 5px;
+        position: relative;
+        left: 40%;
         padding-right: 1em;
     }
     
     .nav-list a {
-        font-size: 2em;
+        font-size: 1.8rem;
     }
     
     .text-header {
