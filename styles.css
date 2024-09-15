@@ -26,6 +26,10 @@ body {
     height: auto;
 }
 
+.with-subtitle {
+    text-align: center;
+}
+
 .navbar {
     z-index: 6;
     display: flex;
